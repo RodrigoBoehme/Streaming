@@ -1,0 +1,60 @@
+body{
+    font-family:'Courier New', Courier, monospace;
+
+    margin: 0;
+    padding: 0;
+    background-color: aquamarine;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+h1{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.categoria{
+    border-radius: 15px;
+    margin-bottom: 50px;
+}
+.categoria h2{
+    background-color: rgb(57, 87, 87);
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+.filmes{
+    display: flex;
+    overflow-x: auto;/*permite rolar horizontalmente*/
+    padding-bottom: 10px;/*para o efeito de rolagem sem cortar as bordas*/
+}
+.filme{
+    width: 250px;
+    background-color: cadetblue;
+    margin-right: 20px;/* espaçamento entre os filmes*/
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+    flex-shrink: 0;/*impede que os "filmes" enconlham*/
+    transition: trasnform 0.2s;/*para dar um tchan na nossa aplicacao adiciona uma animação ao passar o mouse*/
+}
+.filme:hover {
+    transform: scale(1.05);
+}
+.filme img{
+    width: auto;/*ajusta a largura automagicamente*/
+    height: 300px;/*define uma altura que podemos colocar nas imagens*/
+    object-fit: cover;/*garante que a imagem preencha os espaços sem deformar*/
+}
+.filme h3{
+    margin-top: 10px;
+    font-size: 18px;
+    color: black;
+}
+.filme p{
+    font-size: 14px;
+    color: rgb(16, 54, 54);
+    margin: 5px 0;
+}
