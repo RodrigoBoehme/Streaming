@@ -135,5 +135,8 @@ function exibirFilmes(){
 }
 
 //Chamar a função para exibir os filmes
-
+function Shreck(){
+    document.getElementById('shreck').style.display='none';
+    document.getElementById('shreckMovie').style.display='block';
+}
 exibirFilmes()
